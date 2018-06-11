@@ -1,19 +1,19 @@
 package org.learn.HalftonJavaTraning2018.assignment;
 
-public enum TrafficLight {
+public enum TrafficLightEnum {
 
 	RED("Stop", 10), GREEN("Go", 10), YELLOW("Slow", 5);
 
-	private final String commands;
+	private final String command;
 	private final int time;
 
-	TrafficLight(String commands, int time) {
-		this.commands = commands;
+	TrafficLightEnum(String commands, int time) {
+		this.command = commands;
 		this.time = time;
 	}
 
-	public String getCommands() {
-		return commands;
+	public String getCommand() {
+		return command;
 	}
 
 	public int getTime() {
