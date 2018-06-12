@@ -1,16 +1,15 @@
 package com.halftonedesign.trainning;
 
 public enum Lights {
-	RED("Stop"), YELLOW("Slow Down"), GREEN("Go");
+	RED(Test.STOP), YELLOW(Test.SLOW_DOWN), GREEN(Test.GO);
 	
-	private String action;	
+	private Test test;
 	
-	private Lights(String action) {
-		this.action = action;
+	private Lights(Test test) {
+		this.test = test;
 	}
 
-	public String getAction() {
-		return action;
+	public Test getTest() {
+		return test;
 	}
-
-}
+};
